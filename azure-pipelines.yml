@@ -5,7 +5,7 @@ trigger:
 
 pool: 'Default'
 
-name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+name: Custom-$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 
 resources: 
   repositories:
