@@ -32,10 +32,11 @@ namespace OpenTelemetry.Resources
 
         private static Resource DefaultResource { get; } = new Resource(new Dictionary<string, object>
         {
-            [ResourceSemanticConventions.AttributeServiceName] = "unknown_service"
-//                 + (string.IsNullOrWhiteSpace(System.Diagnostics.Process.GetCurrentProcess().ProcessName)
-//                 ? string.Empty :
-//                 ":" + System.Diagnostics.Process.GetCurrentProcess().ProcessName),
+            [ResourceSemanticConventions.AttributeServiceName] = "unknown_service",
+
+// + (string.IsNullOrWhiteSpace(System.Diagnostics.Process.GetCurrentProcess().ProcessName)
+// ? string.Empty :
+// ":" + System.Diagnostics.Process.GetCurrentProcess().ProcessName),
         });
 
         /// <summary>
