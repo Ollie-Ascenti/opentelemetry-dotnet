@@ -16,4 +16,5 @@ resources:
 stages:
 - template: Default-NugetPackage-Build-Publish.yml@CoreTemplates
   parameters:
-    projectName: 'OpenTelemetry.csproj' 
+    projectName: 'OpenTelemetry.csproj'
+    absolutePath: '**/src/OpenTelemetry/OpenTelemetry.csproj'
